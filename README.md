@@ -1,2 +1,2 @@
-<h1> Result Analysis </h1>
+<h1> Admission Counselling For Direct Second Year (Lateral Entry) </h1>
 
