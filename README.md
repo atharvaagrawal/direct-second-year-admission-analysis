@@ -23,6 +23,6 @@ This project is an Analysis of Diploma Final Year Result to take admissioin in D
 </tr>
 
 <tr>
-<td>Config:</td>
-<td>Contains Configure file </td>
+<td>SDLC and STLC:</td>
+<td>Contains SRS Document </td>
 </tr>
