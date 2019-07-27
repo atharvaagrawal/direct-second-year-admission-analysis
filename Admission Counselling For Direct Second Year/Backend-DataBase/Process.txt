@@ -1,0 +1,13 @@
+Install the following modules and software:
+
+*) Install MySQL server (https://dev.mysql.com/downloads/installer/)
+
+1) $ pip install --upgrade pip
+
+2) $ pip install camelot-py[cv]
+
+3) $ pip install bs4
+
+4) $ pip install mysql-connector
+
+5) py -m pip install --trusted-host pypi.python.org pip pandas

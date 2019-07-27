@@ -1,0 +1,85 @@
+Create Database Diploma;
+
+*********************************************************************************************************************************************
+Table for Diploma Final Year Merit List :
+-----------------------------------------------
+Create Table Diploma2018
+(
+SLGMN int(20) ,
+APPID varchar(30) PRIMARY KEY,
+NAME VARCHAR(100),
+GENDER VARCHAR(20),
+DIPLOMAMARKS DOUBLE,
+SSC DOUBLE,
+SCCMATH DOUBLE,
+SSCSCIENCE DOUBLE,
+SSCENGLISH DOUBLE,
+CATEGORY VARCHAR(20)
+);
+
+*********************************************************************************************************************************************
+Table for Student Placed in Top Colleges of Maharashta:
+-----------------------------------------------
+CREATE TABLE ALLOCATED2018 
+(
+COLLEGENAME VARCHAR(300), 
+MERITNO INT , 
+MARKS DOUBLE ,
+APPID VARCHAR(30),
+NAME VARCHAR(100),
+GENDER VARCHAR(10), 
+CATEGORY VARCHAR(20),
+SEATTYPE VARCHAR(30) 
+);
+
+
+*********************************************************************************************************************************************
+Table for All Diploma Institute in Maharashtra Course Wise:
+-----------------------------------------------
+CREATE TABLE COLLEGE2018 
+(
+SRNO INT,
+ChoiceCode INT Primary Key,	
+CourseName Varchar(100),	
+CourseType  Varchar(100),	
+SI int,
+CollegeName Varchar(300)
+);
+
+
+*********************************************************************************************************************************************
+Table for Each college minimum percentage to take admission:
+-----------------------------------------------
+CREATE TABLE COLLEGERANGE2018 
+(
+COLLEGENAME VARCHAR(300),
+BRANCH VARCHAR(50),
+GENDER VARCHAR(20),
+CATEGORY VARCHAR(20),
+SEATTYPE VARCHAR(50),
+MINPER FLOAT
+);
+
+
+*********************************************************************************************************************************************
+Table for All India top 200 Colleges:
+------------------------------------------------------
+CREATE TABLE IndiaTop200College2019
+(
+  INSTITUTEID VARCHAR(20) PRIMARY KEY,
+  COLLEGENAME VARCHAR(300),
+  CITY VARCHAR(50),
+  STATE VARCHAR(100),
+  SCORE FLOAT,
+  CRANK INT
+);
+
+*********************************************************************************************************************************************
+Table for All India all Engineering Colleges:
+---------------------------------------------------------
+CREATE TABLE ALLINDIACOLLEGE2019
+(
+  NAME VARCHAR(300) PRIMARY KEY,
+  CITY   VARCHAR(100) PRIMARY KEY,
+  STATE VARCHAR(100)
+);
