@@ -5,9 +5,9 @@
 This project is an Analysis of Diploma Final Year Result to take admissioin in Direct Second Year Engineering
 
 <h2><u><b> Versions</b> </u></h2>
- Python Version: 3.7
- Django Version: 2.2
- DataBase: MySql Server 8.0
+ Python Version: 3.7 <br/>
+ Django Version: 2.2 <br/>
+ DataBase: MySql Server 8.0 <br/>
  
  <h2><u><b> Directory Info: </b> </u></h2>
 
