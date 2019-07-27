@@ -1,1 +1,15 @@
-pip install mysqlclient
+Project Setup:
+$ pip install mysqlclient
+
+
+To Create Web Application:
+$ django-admin startproject AdmissionDirectSecondYear
+
+To Run Web Server at default localhost and port no:8000 :
+$ python manage.py runserver
+
+Open this in Browser then: http://127.0.0.1:8000/
+
+To Run Web Server at different Port:
+$ python manage.py runserver 0:9000
+
