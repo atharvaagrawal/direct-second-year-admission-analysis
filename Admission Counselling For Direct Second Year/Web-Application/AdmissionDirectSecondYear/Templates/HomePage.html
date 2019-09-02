@@ -1,0 +1,62 @@
+<!-- Home Page -->
+{% extends 'Base.html' %}
+
+
+{% block content %}
+<style>
+    body {
+        background-image: linear-gradient(to right, #C6FFDD, #FBD786 ,#f7797d );
+    }
+</style>
+
+
+<h1> Admission Counselling For Direct Second Year </h1>
+<b>
+    <h2> Welcome {{name}} </h2>
+    <p> Here we Provide Guidance what to do after diploma which college you can get Admission based on
+        Previous data. </p>
+</b>
+<form name="Selection">
+    <table>
+
+        <tr>
+            <td>
+                <button type="button"> Display Colleges in Maharashtra </button>
+            </td>
+            <td>
+                <button type="button"> Cutt-Off List </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button type="button"> Show Seat Matrix/Availability </button>
+            </td>
+
+            <td>
+                <button type="button"> Top College of Maharashtra Admission </button>
+
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <button type="button"> All India Colleges </button>
+            </td>
+            <td>
+                <button type="button"> OutSide Maharashtra College Admission Procedure </button>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <button type="button"> Which College I Can Get Admission? </button>
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+{% endblock %}
