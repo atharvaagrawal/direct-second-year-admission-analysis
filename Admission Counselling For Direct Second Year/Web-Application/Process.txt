@@ -13,3 +13,6 @@ Open this in Browser then: http://127.0.0.1:8000/
 To Run Web Server at different Port:
 $ python manage.py runserver 0:9000
 
+
+To Create App inside Project:
+$python manage.py startapp appname
