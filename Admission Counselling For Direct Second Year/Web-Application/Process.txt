@@ -16,3 +16,12 @@ $ python manage.py runserver 0:9000
 
 To Create App inside Project:
 $python manage.py startapp appname
+
+
+To Migrate:
+python manage.py migrate
+python manage.py makemigrations appname #For Particular app
+python manage.py makemigrations #For whole project
+
+To Create SuperUser:
+python manage.py createsuperuser
