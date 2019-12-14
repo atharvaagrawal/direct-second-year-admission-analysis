@@ -1,0 +1,65 @@
+<!-- Home Page -->
+{% extends 'Base.html' %}
+
+
+{% block content %}
+
+<title> Admission Counselling For Direct Second Year </title>
+
+<style>
+    body {
+        background-image: linear-gradient(to right, #C6FFDD, #FBD786 ,#f7797d );
+    }
+</style>
+ 
+
+<h1> Admission Counselling For Direct Second Year </h1>
+<b>
+    <h2> Welcome </h2>
+    <p> Here we Provide Guidance what to do after diploma which college you can get Admission based on
+        Previous data. </p>
+</b>
+<form name="Selection" >
+    <table>
+
+        <tr>
+            <td>
+                <a href="{% url 'display_colleges_in_maharashtra' %}">   <button type="button"> Display Colleges in Maharashtra </button> </a>
+            </td>
+            <td>
+                <a href="{% url 'cut_off_list' %}">   <button type="button"> Cut-Off List </button> </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="{% url 'show_seat_matrix' %}">   <button type="button"> Show Seat Matrix/Availability </button> </a>
+            </td>
+
+            <td>
+                <a href="{% url 'top_maharashta_college' %}">    <button type="button"> Top College of Maharashtra Admission </button> </a>
+
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <a href="{% url 'all_india_college' %}">      <button type="button"> All India Colleges </button> </a>
+            </td>
+            <td>
+                <a href="{% url 'top_colleges' %}">      <button type="button">India Top 200 Colleges </button> </a>
+            </td>
+ 
+        </tr>
+
+        <tr>
+            <td>
+                <a href="{% url 'college_i_can_get' %}">    <button type="button"> Which College I Can Get Admission? </button> </a>
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+{% endblock %}

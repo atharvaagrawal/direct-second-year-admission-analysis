@@ -1,0 +1,63 @@
+<!-- Home Page -->
+{% extends 'Base.html' %}
+
+
+{% block content %}
+
+<title> All India Colleges </title>
+ 
+<style>
+    body {
+        background-image: linear-gradient(to right, #ee9ca7, #ffdde1 );
+    }
+</style>
+
+<h1> All India Colleges   </h1>
+<form  name="All_India_College" method="POST" action="{% url 'all_india_college' %}">  
+  {% csrf_token %} 
+
+    <h2 align=center>Select City: 
+        <select name="city">
+            <option value="Select City"> Select City </option>
+            {% for entry in city_list %}
+                <option value="{{ entry }}">{{ entry }}</option>
+            {% endfor %}
+        </select> 
+    
+    Select State:
+        <select name="state">
+            <option value="Select State"> Select State </option>
+            {% for entry in state_list %}
+                <option value="{{ entry }}">{{ entry }}</option>
+            {% endfor %}
+        </select> 
+
+    <br/> <br/>
+     
+     <input type="submit" value="Search" name='Vise' /> 
+    <input type="submit" value="Display All" name="All" >
+    </h2>
+</form>
+<br><br>
+
+<table>
+        <tr> 
+            <th> College Name </th>
+            <th> City </th>
+            <th> State </th>
+        </tr>
+
+        {% for row in result %}
+        
+        <tr>
+            <td> {{ row.name }} </td>
+            <td> {{ row.city }} </td>
+            <td> {{ row.state }} </td>
+       </tr>
+       {% endfor %}
+       
+</table>
+
+
+
+{% endblock %}

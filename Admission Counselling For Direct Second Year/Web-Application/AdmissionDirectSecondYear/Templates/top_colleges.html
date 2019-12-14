@@ -1,0 +1,70 @@
+<!-- Home Page -->
+{% extends 'Base.html' %}
+
+
+{% block content %}
+
+<title> All India Top 200 Colleges </title>
+
+
+<style>
+    body {
+        background-image: linear-gradient(to right, #A1FFCE, #FAFFD1 );
+    }
+</style>
+
+ 
+<h1> All India Top 200 Colleges  </h1>
+
+<form  name="India_Top_College" method="POST" action="{% url 'top_colleges' %}">  
+    {% csrf_token %} 
+  
+      <h2 align=center>Select City: 
+          <select name="city">
+              <option value="Select City"> Select City </option>
+              {% for entry in city_list %}
+                  <option value="{{ entry }}">{{ entry }}</option>
+              {% endfor %}
+          </select> 
+      
+      Select State:
+          <select name="state">
+              <option value="Select State"> Select State </option>
+              {% for entry in state_list %}
+                  <option value="{{ entry }}">{{ entry }}</option>
+              {% endfor %}
+          </select> 
+  
+      <br/> <br/>
+       
+       <input type="submit" value="Search" name='Vise' /> 
+      <input type="submit" value="Display All" name="All" >
+      </h2>
+  </form>
+  <br><br>
+  
+  <table>
+          <tr> 
+              <th> Institute Id </th>
+              <th> College Name </th>
+              <th> City </th>
+              <th> State </th>
+              <th> Score </th>
+              <th> College Rank </th>
+          </tr>
+  
+          {% for row in result %}
+          
+          <tr>
+              <td> {{ row.institute_id }} </td>
+              <td> {{ row.college_name }} </td>
+              <td> {{ row.city }} </td>
+              <td> {{ row.state }} </td>
+              <td> {{ row.score }} </td>
+              <td> {{ row.crank }} </td>
+         </tr>
+         {% endfor %}
+         
+  </table>
+  
+{% endblock %}

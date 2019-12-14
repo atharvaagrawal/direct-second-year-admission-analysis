@@ -1,0 +1,79 @@
+<!-- Home Page -->
+{% extends 'Base.html' %}
+
+
+{% block content %}
+
+<title>Which College I Can Get Admission?</title>
+
+<style>
+    body {
+        background-image: linear-gradient(to right, #FFEFBA, #FFFFFF);
+      }
+</style>
+
+
+<h1> Which College I Can Get Admission?  </h1>
+ 
+<form  name="college_I_can_get" method="POST" action="{% url 'college_i_can_get' %}">  
+  {% csrf_token %} 
+ 
+    <h2 align=center>
+        Select Branch: 
+        <select name="branch" required>
+            <option value="Select Branch"> Select  Branch </option>
+            {% for entry in branch_list %}
+                <option value="{{ entry }}">{{ entry }}</option>
+            {% endfor %}
+        </select> 
+    
+       Select Category:
+        <select name="category">
+            <option value="Select Category"> Select Category </option>
+            {% for entry in category_list %}
+                <option value="{{ entry }}">{{ entry }}</option>
+            {% endfor %}
+        </select> 
+
+        Select College Name: 
+        <select name="college">
+          <option value="Select College Name"> Select College Name </option>
+          {% for entry in college_list %}
+              <option value="{{ entry }}">{{ entry }}</option>
+          {% endfor %}
+        </select> 
+
+    <br/> <br/>
+     
+     <input type="submit" value="Search" name='Vise' /> 
+    <input type="submit" value="Display All" name="All" >
+    </h2>
+</form>
+<br><br>
+
+<table>
+        <tr> 
+            <th> College Name </th>
+            <th> Branch </th>
+            <th> Gender </th>
+            <th> Category </th>
+            <th> Seat Type </th>
+            <th> Min Percentage </th>
+      </tr>
+
+        {% for row in result %}
+        
+        <tr>
+            <td> {{ row.college_name }} </td>
+            <td> {{ row.branch }} </td>
+            <td> {{ row.gender }} </td>
+            <td> {{ row.category }} </td>
+            <td> {{ row.seat_type }} </td>
+            <td> {{ row.min_percentage }} </td>
+       </tr>
+       {% endfor %}
+       
+</table>
+
+ 
+{% endblock %}

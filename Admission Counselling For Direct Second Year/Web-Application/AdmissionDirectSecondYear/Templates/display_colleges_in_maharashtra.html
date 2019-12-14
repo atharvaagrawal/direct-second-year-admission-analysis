@@ -1,0 +1,70 @@
+<!-- Home Page -->
+{% extends 'Base.html' %}
+
+
+{% block content %}
+
+<title> Display Colleges in Maharashtra </title>
+
+
+<style>
+    body {
+        
+        background-image: linear-gradient(to right, #FFEEEE, #DDEFBB  );
+       }
+</style>
+
+
+<h1> Display Colleges in Maharashtra </h1>
+<form  name="dis_college_in_maharashtra" method="POST" action="{% url 'display_colleges_in_maharashtra' %}" >   
+  {% csrf_token %} 
+
+    <h2 align=center> 
+      Select Course: <select name="course" required>
+        <option value="Select Course"> Select Course </option>
+        {% for entry in course_list %}
+            <option value="{{ entry }}">{{ entry }}</option>
+        {% endfor %}
+    </select> 
+
+    Select College: <select name="college">
+      <option value="Select College"> Select College </option>
+      {% for entry in college_list %}
+          <option value="{{ entry }}">{{ entry }}</option>
+      {% endfor %}
+    </select> 
+
+    <br/> <br/>
+     
+     <input type="submit" value="Search" name='Vise' /> 
+     <input type="submit" value="Display All" name="All" />
+    </h2>
+</form>
+
+<br><br>
+<table>
+    <tr>   
+      <th> Choice Code </th>
+      <th> Course Name </th>
+      <th> Shift </th>
+      <th> Seat Intake </th>
+      <th> College Name </th>
+    </tr>
+
+    {% for row in result %}  
+    <tr>
+        <td> {{ row.choice_code }} </td>
+        <td> {{ row.course_name }} </td>
+        <td> {{ row.shift }} </td>
+        <td> {{ row.seat_intake }} </td>
+        <td> {{ row.college_name }} </td>
+   </tr>
+   {% endfor %}
+
+</table>
+
+
+
+
+
+{% endblock %}
