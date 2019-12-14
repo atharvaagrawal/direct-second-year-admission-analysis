@@ -3,7 +3,7 @@ Create Database Diploma;
 *********************************************************************************************************************************************
 Table for Diploma Final Year Merit List :
 -----------------------------------------------
-Create Table Diploma2018
+Create Table Diploma2019
 (
 SLGMN int(20) ,
 APPID varchar(30) PRIMARY KEY,
@@ -14,13 +14,15 @@ SSC DOUBLE,
 SCCMATH DOUBLE,
 SSCSCIENCE DOUBLE,
 SSCENGLISH DOUBLE,
+MainGroup  int(5),
+SubGroup    int(5),
 CATEGORY VARCHAR(20)
 );
 
 *********************************************************************************************************************************************
 Table for Student Placed in Top Colleges of Maharashta:
 -----------------------------------------------
-CREATE TABLE ALLOCATED2018 
+CREATE TABLE Allocated2019
 (
 COLLEGENAME VARCHAR(300), 
 MERITNO INT , 
@@ -32,25 +34,10 @@ CATEGORY VARCHAR(20),
 SEATTYPE VARCHAR(30) 
 );
 
-
-*********************************************************************************************************************************************
-Table for All Diploma Institute in Maharashtra Course Wise:
------------------------------------------------
-CREATE TABLE COLLEGE2018 
-(
-SRNO INT,
-ChoiceCode INT Primary Key,	
-CourseName Varchar(100),	
-CourseType  Varchar(100),	
-SI int,
-CollegeName Varchar(300)
-);
-
-
 *********************************************************************************************************************************************
 Table for Each college minimum percentage to take admission:
 -----------------------------------------------
-CREATE TABLE COLLEGERANGE2018 
+CREATE TABLE COLLEGERANGE2019 
 (
 COLLEGENAME VARCHAR(300),
 BRANCH VARCHAR(50),
@@ -59,7 +46,6 @@ CATEGORY VARCHAR(20),
 SEATTYPE VARCHAR(50),
 MINPER FLOAT
 );
-
 
 *********************************************************************************************************************************************
 Table for All India top 200 Colleges:
@@ -73,13 +59,92 @@ CREATE TABLE IndiaTop200College2019
   SCORE FLOAT,
   CRANK INT
 );
-
+https://www.nirfindia.org/2019/EngineeringRanking.html
 *********************************************************************************************************************************************
 Table for All India all Engineering Colleges:
 ---------------------------------------------------------
 CREATE TABLE ALLINDIACOLLEGE2019
 (
-  NAME VARCHAR(300) PRIMARY KEY,
-  CITY   VARCHAR(100) PRIMARY KEY,
+  ID INT PRIMARY KEY,
+  NAME VARCHAR(300),
+  CITY   VARCHAR(100) ,
   STATE VARCHAR(100)
 );
+https://www.nirfindia.org/2019/EngineeringRankingALL.html
+*********************************************************************************************************************************************
+Table for SEATALLOATMENT:
+---------------------------------------------------------
+CREATE TABLE SeatAlloatment2019
+(
+      MainGroup INT,
+      SubGroup  INT,     	
+      InstituteCode INT  PRIMARY KEY,
+      InstituteName VARCHAR(100),
+      ChoiceCode  INT,
+      Status VARCHAR(100),
+      VacantSeats INT,
+      LateralSeats INT,
+      EWS INT,
+      OPENG INT,
+      OPENL INT,
+      SCG INT,
+      SCL INT,
+      STG INT,
+      STL INT,
+      VJDTNTA  INT,
+      NTB INT,
+      NTC INT,
+      NTD INT,
+      OBC INT,
+      SEBC   INT,	
+);
+
+
+*********************************************************************************************************************************************
+Table for CUTTOFFLIST:
+---------------------------------------------------------
+
+CREATE TABLE CuttOffList2019
+(
+      InstituteCode INT  PRIMARY KEY,
+      InstituteName VARCHAR(100),
+      ChoiceCode  INT,
+      COURSENAME VARCHAR(100),
+      SHIFT   VARCHAR(100),
+      SUBGROUP INT,	
+      EWS Float,
+      OPENG INT,
+      OPENL INT,
+      SCG INT,
+      SCL INT,
+      STG INT,
+      STL INT,
+      VJDTNTA  INT,
+      NTB INT,
+      NTC INT,
+      NTD INT,
+      OBC INT,
+      SEBC   INT,		
+);
+
+
+*********************************************************************************************************************************************
+
+
+
+*********************************************************************************************************************************************
+Ended Support:
+*********************************************************************************************************************************************
+Table for All Diploma Institute in Maharashtra Course Wise:
+-----------------------------------------------
+CREATE TABLE COLLEGEINMAHARASHTRA2019 
+(
+SRNO INT,
+ChoiceCode INT Primary Key,	
+CourseName Varchar(100),	
+Shift Varchar(100),	
+SeatIntake int,
+CollegeName Varchar(300)
+);
+https://dse19.mahacet.org.in/dse19/index.php/hp_controller/instcourses
+*********************************************************************************************************************************************
