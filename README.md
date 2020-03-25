@@ -29,4 +29,4 @@ This project is an Analysis of Diploma Final Year Result to take admissioin in D
 </table>
 <br/>
 
-?[](/Output%20Images/1-Home-Page.png?raw=true)
+?[](Output%20Images/1-Home-Page.png)
