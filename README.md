@@ -28,4 +28,4 @@ This project is an Analysis of Diploma Final Year Result to take admissioin in D
 </tr>
 </table>
 <br/>
-?[](https://github.com/atharvaagrawal/direct-second-year-admission-analysis/blob/master/Output%20Images/1-Home-Page.png)
+?[](https://github.com/atharvaagrawal/direct-second-year-admission-analysis/blob/master/Output%20Images/1-Home-Page.png?raw=true )
