@@ -14,7 +14,7 @@ def college_i_can_get_admission(request):
     row = cursor.fetchall()
     category_list = [item for i in row for item in i]
     
-    cursor.execute('select distinct category from collegerange2019')
+    cursor.execute('select distinct branch from collegerange2019')
     row = cursor.fetchall()
     branch_list = [item for i in row for item in i]
 
@@ -25,16 +25,16 @@ def college_i_can_get_admission(request):
     if request.method == "POST":
         if request.POST.get("Vise"):    
             category_get = request.POST['category']
-            college_get = request.POST['college']
             branch_get = request.POST['branch']
-        
-        if college_get != "Select  College Name":
-            result =  WhereAdmissionModel.objects.raw("select * from collegerange2019 where college_name = %s & branch = %s order by branch  ",(college_get,branch_get,))
+            college_get = request.POST['college']
+
+        if college_get != "Select College Name":
+            result =  WhereAdmissionModel.objects.raw("select * from collegerange2019 where college_name = %s  order by category  ",(college_get,))
         elif category_get != "Select Category":
-            result =  WhereAdmissionModel.objects.raw("select * from collegerange2019 where category = %s & branch = %s  order by college_name ",(category_get,branch_get,))
-
-
-        if request.POST.get("All"):
-             result =  WhereAdmissionModel.objects.raw("select  * from collegerange2019 order by college_name")
+            result =  WhereAdmissionModel.objects.raw("select * from collegerange2019 where category = %s order by college_name ",(category_get,))
+           
         
+        if request.POST.get("All"):
+            result =  WhereAdmissionModel.objects.raw("select  * from collegerange2019 order by college_name,category")
     return render(request,'college_i_can_get_admission.html',{'college_list':college_list,'category_list':category_list,'branch_list':branch_list,'result':result})
+  
