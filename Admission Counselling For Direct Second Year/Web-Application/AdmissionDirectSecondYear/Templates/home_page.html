@@ -10,6 +10,10 @@
     body {
         background-image: linear-gradient(to right, #C6FFDD, #FBD786 ,#f7797d );
     }
+
+    button{
+        font-size:150%;
+    }
 </style>
  
 
@@ -27,20 +31,10 @@
                 <a href="{% url 'display_colleges_in_maharashtra' %}">   <button type="button"> Display Colleges in Maharashtra </button> </a>
             </td>
             <td>
-                <a href="{% url 'cut_off_list' %}">   <button type="button"> Cut-Off List </button> </a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <a href="{% url 'show_seat_matrix' %}">   <button type="button"> Show Seat Matrix/Availability </button> </a>
-            </td>
-
-            <td>
                 <a href="{% url 'top_maharashta_college' %}">    <button type="button"> Top College of Maharashtra Admission </button> </a>
 
             </td>
-
+           
         </tr>
 
         <tr>
