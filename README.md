@@ -1,5 +1,5 @@
 #Admission Counselling For Direct Second Year
-(Lateral Entry)
+ Lateral Entry
 
 ##Introduction
 This project is an Analysis of Diploma Final Year Result to take admissioin in Direct Second Year Engineering
@@ -10,7 +10,8 @@ This project is an Analysis of Diploma Final Year Result to take admissioin in D
  DataBase: MySql Server 8.0 
  
 ##Directory Info:
-
+|Directory|Info|
+|---|---|
 |Admission Counselling For Direct Second Year:|Contains the WebApplication and Backened DataBase Creation Code|
 |Planning:|Contains the planning of Project|
 |SDLC and STLC:|Contains SRS Document|
