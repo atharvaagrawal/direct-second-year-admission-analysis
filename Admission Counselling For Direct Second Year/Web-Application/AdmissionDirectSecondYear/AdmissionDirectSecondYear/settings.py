@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '+cddm7c+rvb6ct5k2tqz@+rff@0s=h+#cq0xi*09@v23tv#u^$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True 
 
 ALLOWED_HOSTS = []
 
@@ -39,9 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'AllIndiaColleges',
     'TopColleges',
-    'CuttOffList',
-    'DisplayCollegesInMaharashtra',
-    'ShowSeatMatrix',
+    'DisplayCollegesInMaharashtra', 
     'TopMaharashtraCollegeList',
     'WhereICanGetAdmission',
     
@@ -115,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 

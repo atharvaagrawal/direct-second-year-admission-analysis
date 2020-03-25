@@ -7,11 +7,9 @@ from . import views
 from django.views.generic import TemplateView  
 
 urlpatterns = [
-    path('',include('AllIndiaColleges.urls')),
-    path('',include('CuttOffList.urls')),
+    path('',include('AllIndiaColleges.urls')),  
     path('',include('DisplayCollegesInMaharashtra.urls')),
     path('',include('TopColleges.urls')),
-    path('',include('ShowSeatMatrix.urls')),
     path('',include('TopMaharashtraCollegeList.urls')),
     path('',include('WhereICanGetAdmission.urls')),
     path('admin/', admin.site.urls), 
