@@ -29,27 +29,28 @@ This project is an Analysis of Diploma Final Year Result to take admissioin in D
 </table>
 <br/>
 
-##Output Images:
+<h2><b>Output Images:</b></h2>
 <br/>
-**1) Home Page: **
+<b>1) Home Page: </b>
+<br/>
 ![](https://raw.githubusercontent.com/atharvaagrawal/direct-second-year-admission-analysis/master/images/1-Home-Page.png)
 <br/>
-**2) Diplay Colleges in Maharashtra: **
+<b>Diplay Colleges in Maharashtra: </b>
+<br/>
 ![](https://raw.githubusercontent.com/atharvaagrawal/direct-second-year-admission-analysis/master/images/2-Display-Colleges-in-Maharashtra.png)
-
 <br/>
-**3) Top Colleges of Maharashta Admission: **
+<b>3) Top Colleges of Maharashta Admission: </b>
+<br/>
 ![](https://raw.githubusercontent.com/atharvaagrawal/direct-second-year-admission-analysis/master/images/3-Top-Colleges-of-Maharashtra-Admission.png)
-
 <br/>
-**4) All India Colleges: **
+<b>4) All India Colleges: </b>
+<br/>
 ![](https://raw.githubusercontent.com/atharvaagrawal/direct-second-year-admission-analysis/master/images/4-All-India-Colleges.png)
-
 <br/>
-**5) All India Top200 Colleges: **
+<b>5) All India Top200 Colleges: </b>
+<br/>
 ![](https://raw.githubusercontent.com/atharvaagrawal/direct-second-year-admission-analysis/master/images/5-All-India-top-200-college.png)
-
 <br/>
-**6) Which College I can get Admission: **
+<b>6) Which College I can get Admission: </b>
 <br/>
 ![](https://raw.githubusercontent.com/atharvaagrawal/direct-second-year-admission-analysis/master/images/6-Which-College-I-Can-Get-Admission.png)
