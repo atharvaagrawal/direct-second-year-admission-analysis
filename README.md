@@ -1,7 +1,9 @@
 # Admission Counselling For Direct Second Year(Lateral Entry)
 ***
 ## Introduction
-This project is an Analysis of Diploma Final Year Result to take admissioin in Direct Second Year Engineering
+This project is an Analysis of Diploma Final Year Result of MSBTE to take admissioin in Direct Second Year Engineering.
+The project is basically has extracted data from PDF using `camelot` and web-scrapping from website using `bs4`.
+The Website is created in Django.
 ***
 ## Versions
 1. **Python Version:** 3.7 
