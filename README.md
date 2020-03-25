@@ -1,5 +1,4 @@
-# Admission Counselling For Direct Second Year
- Lateral Entry
+# Admission Counselling For Direct Second Year(Lateral Entry)
 ***
 ## Introduction
 This project is an Analysis of Diploma Final Year Result to take admissioin in Direct Second Year Engineering
