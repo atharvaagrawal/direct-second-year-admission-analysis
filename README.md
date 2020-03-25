@@ -1,56 +1,36 @@
-<h1><u> <center> Admission Counselling For Direct Second Year </center> </u></h1>
+#Admission Counselling For Direct Second Year
 (Lateral Entry)
 
-<h2><u>Introduction</h2></u>
+##Introduction
 This project is an Analysis of Diploma Final Year Result to take admissioin in Direct Second Year Engineering
 
-<h2><u><b> Versions</b> </u></h2>
- Python Version: 3.7 <br/>
- Django Version: 2.2 <br/>
- DataBase: MySql Server 8.0 <br/>
+##Versions
+ Python Version: 3.7 
+ Django Version: 2.2 
+ DataBase: MySql Server 8.0 
  
- <h2><u><b> Directory Info: </b> </u></h2>
+##Directory Info:
 
-<table>
-<tr>
-<td>Admission Counselling For Direct Second Year:</td>
-<td>Contains the WebApplication and Backened DataBase Creation Code </td>
-</tr>
+|Admission Counselling For Direct Second Year:|Contains the WebApplication and Backened DataBase Creation Code|
+|Planning:|Contains the planning of Project|
+|SDLC and STLC:|Contains SRS Document|
 
-<tr>
-<td>Planning:</td>
-<td>Contains the planning of Project </td>
-</tr>
-
-<tr>
-<td>SDLC and STLC:</td>
-<td>Contains SRS Document </td>
-</tr>
-</table>
-<br/>
-
-<h2><b>Output Images:</b></h2>
-<br/>
-<b>1) Home Page: </b>
-<br/>
+##Output Images:
+ 
+1) Home Page: 
 ![](https://raw.githubusercontent.com/atharvaagrawal/direct-second-year-admission-analysis/master/images/1-Home-Page.png)
-<br/>
-<b>Diplay Colleges in Maharashtra: </b>
-<br/>
+
+2) Diplay Colleges in Maharashtra: 
 ![](https://raw.githubusercontent.com/atharvaagrawal/direct-second-year-admission-analysis/master/images/2-Display-Colleges-in-Maharashtra.png)
-<br/>
-<b>3) Top Colleges of Maharashta Admission: </b>
-<br/>
+
+3) Top Colleges of Maharashta Admission: 
 ![](https://raw.githubusercontent.com/atharvaagrawal/direct-second-year-admission-analysis/master/images/3-Top-Colleges-of-Maharashtra-Admission.png)
-<br/>
-<b>4) All India Colleges: </b>
-<br/>
+
+4) All India Colleges: 
 ![](https://raw.githubusercontent.com/atharvaagrawal/direct-second-year-admission-analysis/master/images/4-All-India-Colleges.png)
-<br/>
-<b>5) All India Top200 Colleges: </b>
-<br/>
+
+5) All India Top200 Colleges: 
 ![](https://raw.githubusercontent.com/atharvaagrawal/direct-second-year-admission-analysis/master/images/5-All-India-top-200-college.png)
-<br/>
-<b>6) Which College I can get Admission: </b>
-<br/>
+
+6) Which College I can get Admission:
 ![](https://raw.githubusercontent.com/atharvaagrawal/direct-second-year-admission-analysis/master/images/6-Which-College-I-Can-Get-Admission.png)
