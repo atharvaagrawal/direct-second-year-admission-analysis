@@ -1,7 +1,7 @@
 # Admission Counselling For Direct Second Year(Lateral Entry)
 ***
 ## Introduction
-This project is an Analysis of Diploma Final Year Result of MSBTE to take admissioin in Direct Second Year Engineering. The Website is created using `Django`. The project is basically has extracted data from PDF using `camelot` library of python and web-scrapping from website using `bs4` library of python. The data is stored on `MySQL` Database. 
+This project is an Analysis of the Diploma Final Year Result of MSBTE to take admission to Direct Second Year Engineering. The Website is created using `Django`.The project is basically has extracted data from PDF using the `camelot` library of python and web-scrapping from the website using the `bs4` library of python. The data is stored in the `MySQL Database`.
 
 ***
 ## Versions
@@ -16,6 +16,10 @@ This project is an Analysis of Diploma Final Year Result of MSBTE to take admiss
 |Admission Counselling For Direct Second Year:|Contains the WebApplication and Backened DataBase Creation Code|
 |Planning:|Contains the planning of Project|
 |SDLC and STLC:|Contains SRS Document|
+
+***
+## Project Working Youtube Video
+[![](http://img.youtube.com/vi/Wk5phB4o_No/0.jpg)](http://www.youtube.com/watch?v=Wk5phB4o_No "Django Project: Admission Counselling For Direct Second Year")
 
 ***
 ## Output Images:
